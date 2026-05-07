@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>광주광역시 서구 착한가게 안내</title>
+    <!-- 폰트 적용 (Pretendard) -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>✨ 서구 착한가게 리스트</h1>
+            <p>우리 동네 착한가게를 한눈에 확인하세요.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 검색 영역 -->
+        <div class="search-section">
+            <input type="text" id="searchInput" placeholder="가게명, 카테고리 또는 주소로 검색해보세요...">
+            <p class="loading-text" id="loadingText">데이터를 불러오는 중입니다...</p>
+        </div>
+
+        <!-- 카드 리스트 영역 -->
+        <div class="store-grid" id="storeGrid">
+            <!-- 자바스크립트를 통해 여기에 카드가 추가됩니다. -->
+        </div>
+    </main>
+
+    <!-- CSV 데이터 처리용 Base64 파일 로드 -->
+    <script src="data.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
